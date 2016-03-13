@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wikiviewer</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/viewer.css"/>
+</head>
+<body>
+    
+    <div class="navbar navbar-fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo"/>
+        </a>
+        <form onsubmit="return false" class="navbar-form pull-right">
+            <input id="search" type="search" placeholder="Search articles"/>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+                <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Main page</a>
+            </li>
+            <li class="random">
+                <a href="#">Random article</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="controls" class="col-md-1">
+        <h2>Font size <br><span>(to do)</span></h2>
+
+        <div class="circle bigger-text" data-toggle="tooltip" data-placement="right" title="Large">
+            <p>A+</p>
+        </div>
+        <div class="circle smaller-text" data-toggle="tooltip" data-placement="right" title="Small">
+            <p>A-</p>
+        </div>
+    </div>
+    <div class="col-md-11">
+        <section id="content">
+            <div id="more-elements"></div>
+            <div class="content-container">
+                <div class="result without-line">
+                    <h2>Write in the search field, to see the results.</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/viewer.js"></script>
+</body>
+</html>
